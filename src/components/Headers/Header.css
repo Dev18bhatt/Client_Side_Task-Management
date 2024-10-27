@@ -1,0 +1,57 @@
+/* Header.css */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Center aligns items in the header */
+    padding: 20px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.header-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    /* Aligns items vertically within the menu */
+    gap: 20px;
+    /* Equal spacing between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu li,
+.header-menu .view-button {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+.header-menu .view-button:hover,
+.header-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.header-menu li:active,
+.header-menu .view-button:active {
+    transform: scale(1);
+}

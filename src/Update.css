@@ -1,0 +1,95 @@
+/* Update.css */
+
+.update-task-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.update-task-container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.update-task-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.update-task-container label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.update-task-container input[type="text"],
+.update-task-container input[type="date"],
+.update-task-container textarea,
+.update-task-container select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.update-task-container input[type="text"]:focus,
+.update-task-container input[type="date"]:focus,
+.update-task-container textarea:focus,
+.update-task-container select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.update-task-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.update-task-container .update-button {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.update-task-container .update-button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .update-task-container {
+        padding: 1.5rem;
+    }
+
+    .update-task-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .update-task-container .update-button {
+        font-size: 1rem;
+    }
+}
